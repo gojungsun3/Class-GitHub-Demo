@@ -69,3 +69,14 @@ We are 95% confident that when the standardized reading score is 52, the standar
 ## Conclusion
 
 The researcher explored the data of randomly selected national sample of 200 high school seniors. According to the analysis, linear regression model showed a positive relationship with the slope of 0.55, the correlation coefficient of 0.6, and the coefficient of determination of 0.36. In conclusion, every 1 point increase in reading, there is about 0.55 point increase in writing. Also, 36% of the variation in the writing score can be explained by the reading score. When constructing the confidence interval for the slope of the regression line, we are 95% confident that the writing score would increase between 0.45 and 0.66 points for every 1 additional point increase in reading score. Also, we are 95% confident that when the reading score is 56, the writing score would be between 37.57 and 67.72. and the mean writing score would be between 51.58 and 53.71.
+
+I like to creat a boxplot again
+```{r}
+
+mean(hsb2$read)
+
+predict(model, data.frame(read = 52), interval = "prediction")
+
+predict(model, data.frame(read = 52), interval = "confidence")
+
+```
